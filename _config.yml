@@ -1,0 +1,45 @@
+name: "MyWebsitename"
+title: "MyWebsitename"
+description: "MyWebsitename Description"
+meta_description: "MyWebsitename Description"
+logo: 'assets/img/logo.jpg'
+favicon: 'assets/img/favicon.png'
+paginate: 12
+baseurl: ''
+url: 'https://example.com.com'
+email: 'hello@example.com'
+locale: en_US
+seo:
+  keywords: 'keywords'
+  site_name: mywebsitename
+og:
+  type: "website"
+
+plugins: 
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+        
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
